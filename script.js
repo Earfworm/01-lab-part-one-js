@@ -42,4 +42,23 @@ while (true) {
     break;
   }
   }
+
+// extended challenge
+let hours = 50;
+let wage = 10;
+let paycheck = 40 * wage;
+if (hours > 40) {
+  // let overtimeHours = hours - 40;
+  // console.log(overtimeHours);
+  // let overtimePay = overtimeHours * wage * 1.5;
+  // console.log(overtimePay);
+  // paycheck += overtimePay;
+  //   shorter version:
+    paycheck += (hours - 40) * (wage * 1.5);
+}
+console.log(paycheck);
+let weeks = 0;
+weeks = Math.ceil(1000000/paycheck);
+console.log(`It would take ${weeks} weeks to earn one million bucks!`)
+
  
